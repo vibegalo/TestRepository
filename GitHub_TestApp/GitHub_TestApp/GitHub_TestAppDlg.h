@@ -35,4 +35,5 @@ protected:
 public:
 	CStatic m_stMessage;
 	afx_msg void OnBnClickedBtPostMessage1();
+	afx_msg void OnBnClickedBtPostMessage2();
 };

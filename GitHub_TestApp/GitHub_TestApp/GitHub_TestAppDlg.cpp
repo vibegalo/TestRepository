@@ -66,6 +66,7 @@ BEGIN_MESSAGE_MAP(CGitHub_TestAppDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BT_POST_MESSAGE_1, &CGitHub_TestAppDlg::OnBnClickedBtPostMessage1)
+	ON_BN_CLICKED(IDC_BT_POST_MESSAGE_2, &CGitHub_TestAppDlg::OnBnClickedBtPostMessage2)
 END_MESSAGE_MAP()
 
 
@@ -159,4 +160,11 @@ HCURSOR CGitHub_TestAppDlg::OnQueryDragIcon()
 void CGitHub_TestAppDlg::OnBnClickedBtPostMessage1()
 {
 	AfxMessageBox(L"dassad");
+}
+
+
+void CGitHub_TestAppDlg::OnBnClickedBtPostMessage2()
+{
+	m_stMessage.SetWindowTextW(_T("Some message"));
+	return;
 }
