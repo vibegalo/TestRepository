@@ -34,4 +34,5 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	CStatic m_stMessage;
+	afx_msg void OnBnClickedBtPostMessage1();
 };
